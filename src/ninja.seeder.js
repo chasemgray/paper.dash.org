@@ -13,7 +13,7 @@
 	lastInputTime: new Date().getTime(),
 	seedPoints: [],
 	isStillSeeding: true,
-	seederDependentWallets: ["singlewallet", "paperwallet", "bulkwallet", "vanitywallet", "splitwallet"],
+	seederDependentWallets: ["singlewallet", "paperwallet", "bulkwallet", "splitwallet"],
 
 	seedWithRandomPhoto: function() {
 		var url = 'https://picsum.photos/200/300/?random';
