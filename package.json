@@ -7,10 +7,10 @@
   "dependencies": {
     "grunt": "~0.4.1",
     "grunt-combine": "~0.8.3",
-	"grunt-lineending": "~0.2.4"
+    "grunt-lineending": "~0.2.4"
   },
   "devDependencies": {
-	"grunt": "~0.4.1",
+    "grunt": "~0.4.1",
     "grunt-combine": "~0.8.3",
     "grunt-lineending": "~0.2.4"
   },
@@ -25,7 +25,11 @@
     "dash address wallet generator"
   ],
   "author": "dash",
-  "contributors": [{"name": "pointbiz"}],
+  "contributors": [
+    {
+      "name": "pointbiz"
+    }
+  ],
   "license": "MIT",
   "readmeFilename": "README",
   "gitHead": "99519351e655ead836a3aa15a185a6ad17fd9107",

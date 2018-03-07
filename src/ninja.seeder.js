@@ -15,6 +15,24 @@
 	isStillSeeding: true,
 	seederDependentWallets: ["singlewallet", "paperwallet", "bulkwallet", "vanitywallet", "splitwallet"],
 
+	seedWithRandomPhoto: function() {
+		var url = 'https://picsum.photos/200/300/?random';
+		var options = {
+			method: 'GET',
+			headers: new Headers({})
+		};
+		var request = new Request(url);
+
+		fetch(request, options).then((response) => {
+			response.arrayBuffer().then((buffer) => {
+				int8Array = new Uint8Array(buffer);
+				int8Array.forEach((int8) => {
+					SecureRandom.seedInt8(int8);
+				});
+				ninja.seeder.seedingOver();
+			});
+		});
+	},
 	// seed function exists to wait for mouse movement to add more entropy before generating an address
 	seed: function (evt) {
 		if (!evt) var evt = window.event;
